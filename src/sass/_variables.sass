@@ -1,2 +1,7 @@
 @import ../../node_modules/bootstrap/scss/functions
 @import ../../node_modules/bootstrap/scss/variables
+
+$spacer: 1vh
+$spacers: (0: 0)
+@for $i from 1 to 100
+    $spacers: map-merge($spacers, ($i: $i * $spacer))
