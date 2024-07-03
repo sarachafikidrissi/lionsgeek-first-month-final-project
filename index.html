@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="./public/css/app.css">
 </head>
 <body>
-  <header>
+  <header id="home">
     <nav class="px-10 py-2">
         <div class="logo">
             <h4 class="text-white">Delicious</h4>
         </div>
         <div class="right-side gap-2">
                 <ul class="list-unstyled d-flex gap-4 m-0">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">specials</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Chefs</a></li>
-                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#specials">specials</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#chefs">Chefs</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Dropdown
@@ -32,7 +32,7 @@
                           <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                       </li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div>
                   <button class="px-4 py-1 nav-btn">Book a table</button>
@@ -95,8 +95,8 @@
     </section>
   </header>
 
-  <section class="about">
-    <div class="about-top d-flex gap-10 py-8">
+  <section class="about py-8" id="about">
+    <div class="about-top d-flex gap-10 ">
       <div class="video">
         <video   controls poster="./public/images/about.jpg">
           <source src="./public/videos/Restaurant 1890 by Gordon Ramsay Executive Chef James Sharp Cooks a Michelin star Chicken Dish.mp4" type="video/mp4">
@@ -153,6 +153,36 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="menu py-8 d-flex flex-column gap-3">
+    <div class="d-flex flex-column align-items-center gap-1">
+      <h2 class="why-title">Why choose</span><span class="text-orange"> Our Restaurant</span> </h2>
+    </div>
+    <div class="switchers d-flex justify-content-center gap-2">
+      <label for="show-all" class="px-2">Show All</label>
+      <label for="starter" class="px-2">starter</label>
+      <label for="salad" class="px-2">Salads</label>
+      <label for="special" class="px-2">Specialty</label>
+    </div>
+    <div class="menus">
+      <input type="radio" name="menu" id="show-all" class="visually-hidden checkbox-hidden" checked>
+      <p class="show-all">Show all menu</p>
+
+      <input type="radio" name="menu" id="starter" class="visually-hidden checkbox-hidden">
+      <p class="starter">Starter menu</p>
+
+      <input type="radio" name="menu" id="salad" class="visually-hidden checkbox-hidden">
+      <p class="salad">salad menu</p>
+
+      <input type="radio" name="menu" id="special" class="visually-hidden checkbox-hidden">
+      <p class="special">speciality</p>
+    </div>
+
+
+
+    
+    
   </section>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
