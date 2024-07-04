@@ -49329,6 +49329,15 @@ nav {
   transition: 0.5;
 }
 
+.first-carousel .carousel-item:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+}
+
 @font-face {
   font-family: about-font;
   src: url(../../public/fonts/Satisfy/Satisfy-Regular.ttf);
@@ -49482,6 +49491,58 @@ label:hover {
   background-color: #ffb03b;
   transition: 0.5;
   color: white;
+}
+
+.second-carousel-img {
+  width: 50%;
+}
+
+.events {
+  width: 100%;
+  background-image: url(../../public/images/events-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#second-carousel .carousel-title, #second-carousel h2, #second-carousel .h2 {
+  font-family: about-font;
+}
+#second-carousel .carousel-indicators {
+  bottom: -6vh;
+}
+#second-carousel .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50% !important;
+}
+#second-carousel .carousel-indicators .active {
+  background-color: orange;
+}
+
+.form-para {
+  width: 70%;
+}
+
+.form-input {
+  border: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.form-input input {
+  width: 25vw;
+  height: 6vh;
+  padding-left: 1vw;
+  border: 1px solid #dee2e6;
+}
+
+.message-input textarea {
+  width: 100%;
+  height: 20vh;
+  padding-left: 1vw;
+  border: 1px solid #dee2e6;
+}
+
+.form-btn button:hover {
+  background-color: orange;
 }
 
 /*# sourceMappingURL=app.css.map */
