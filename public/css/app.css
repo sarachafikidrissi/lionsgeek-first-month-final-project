@@ -49445,52 +49445,51 @@ video {
   color: #5f5950;
 }
 
-.show-all {
-  display: none;
+@font-face {
+  font-family: italic-bold;
+  src: url(../../public/fonts/Comic_Neue/ComicNeue-BoldItalic.ttf);
+}
+@font-face {
+  font-family: italic;
+  src: url(../../public/fonts/Comic_Neue/ComicNeue-Italic.ttf);
+}
+.menu ul button {
+  background-color: white;
+  border: 1px solid orange;
+  color: black;
+  border-radius: 50px !important;
+  padding: 0.5vh 1vw;
 }
 
-#show-all:checked ~ .show-all {
-  display: block;
+button.nav-link.active, button.nav-link:hover {
+  background-color: orange !important;
+  color: white !important;
+  background-color: red;
+  margin-bottom: 0;
 }
 
-.special {
-  display: none;
+.dashed-line::after {
+  content: ".........................................................................................";
+  width: 10vw;
+  position: relative;
+  bottom: 4px;
+  left: 20px;
+  color: black !important;
+  color: #948c81 !important;
 }
 
-#special:checked ~ .special {
-  display: block;
+.menu-items a {
+  color: #ff9b08;
+  font-weight: 700;
 }
-
-.starter {
-  display: none;
+.menu-items .ingredients {
+  font-family: italic;
+  color: #948c81;
+  font-weight: 900;
 }
-
-#starter:checked ~ .starter {
-  display: block;
-}
-
-.salad {
-  display: none;
-}
-
-#salad:checked ~ .salad {
-  display: block;
-}
-
-.checkbox-hidden {
-  position: absolute;
-  left: -100vw;
-}
-
-label {
-  border: 2px solid #ffb03b;
-  border-radius: 50px;
-}
-
-label:hover {
-  background-color: #ffb03b;
-  transition: 0.5;
-  color: white;
+.menu-items .price {
+  font-weight: 700;
+  color: #444444;
 }
 
 .second-carousel-img {
@@ -49573,15 +49572,16 @@ label:hover {
   width: 100%;
 }
 .photos .image-container {
-  padding: 2px;
+  width: 24vw;
   overflow: hidden;
+  background: black;
 }
 .photos img {
-  width: 24vw;
+  width: 100%;
 }
 .photos img:hover {
   transition: 1s;
-  scale: 1.1;
+  scale: 1.2;
 }
 
 /*# sourceMappingURL=app.css.map */
