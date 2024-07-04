@@ -49521,6 +49521,10 @@ label:hover {
 
 .form-para {
   width: 70%;
+  color: #444444;
+  font-family: comic-new-regular;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .form-input {
@@ -49543,6 +49547,41 @@ label:hover {
 
 .form-btn button:hover {
   background-color: orange;
+}
+
+.form-top h2, .form-top .h2 {
+  font-family: about-font;
+  font-weight: bolder;
+}
+
+.gallery-title h2, .gallery-title .h2 {
+  font-family: about-font;
+  font-weight: bolder;
+}
+.gallery-title p {
+  width: 70%;
+  color: #444444;
+  font-family: comic-new-regular;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  width: 100%;
+}
+.photos .image-container {
+  padding: 2px;
+  overflow: hidden;
+}
+.photos img {
+  width: 24vw;
+}
+.photos img:hover {
+  transition: 1s;
+  scale: 1.1;
 }
 
 /*# sourceMappingURL=app.css.map */
