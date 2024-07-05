@@ -49454,6 +49454,24 @@ nav {
   nav .right-side {
     display: none !important;
   }
+  .respo-list {
+    position: fixed;
+    top: 5%;
+    bottom: 5%;
+    right: 5%;
+    left: 5%;
+    background-color: white;
+    padding-top: 10vh;
+    padding-left: 5vw;
+    flex-direction: column;
+    z-index: 99999;
+  }
+  .respo-list li a {
+    color: black;
+  }
+  #check:checked ~ .right-side {
+    display: block !important;
+  }
 }
 @font-face {
   font-family: about-font;

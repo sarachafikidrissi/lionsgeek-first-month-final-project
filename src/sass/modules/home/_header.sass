@@ -70,3 +70,20 @@ nav
         padding: 2vh 10vw 2vw
         .right-side
             display: none !important
+    .respo-list
+        position: fixed
+        top: 5%
+        bottom: 5%
+        right: 5%
+        left: 5%
+        background-color: white
+        padding-top: 10vh
+        padding-left: 5vw
+        flex-direction: column
+        z-index: 99999
+        li a
+            color: black
+
+    #check:checked  ~ .right-side
+        display: block !important
+
