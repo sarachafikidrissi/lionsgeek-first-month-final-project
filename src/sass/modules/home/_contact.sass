@@ -3,6 +3,7 @@
     flex-direction: column
     align-items: center
     gap: 5vh
+    padding-bottom: 8vh
 .map
     iframe
         width: 100vw
@@ -67,3 +68,17 @@
         color: white
     button:hover
         background-color: orange
+
+@media (max-width: 430px)
+    .contact
+        padding-bottom: 0
+    .contact div p
+        width: 100% !important
+    .info
+        width: 100% !important
+        .top
+            flex-direction: column
+            gap: 5vw
+            .info-items
+                gap: 10vw
+
