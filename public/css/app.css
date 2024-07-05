@@ -49727,4 +49727,27 @@ button.nav-link.active, button.nav-link:hover {
   scale: 1.2;
 }
 
+.testimonials {
+  width: 100%;
+  background-image: url(../../public/images/testimonials-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.testimonial-item img {
+  width: 100px;
+  height: 100px;
+}
+
+#third-carousel .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+}
+#third-carousel .carousel-indicators .active {
+  background-color: orange;
+}
+#third-carousel p {
+  font-family: paragraph-font;
+}
+
 /*# sourceMappingURL=app.css.map */
