@@ -49847,4 +49847,40 @@ button.nav-link.active, button.nav-link:hover {
   background-color: orange;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: center;
+  padding: 5vh;
+  background-color: #35322d;
+  color: white;
+}
+.footer h2, .footer .h2 {
+  font-family: about-font;
+}
+
+.orange-text {
+  color: orange;
+}
+
+.socials {
+  display: flex;
+  gap: 2vh;
+}
+.socials i {
+  background-color: #46423b;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+.socials i:hover {
+  background-color: orange;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*# sourceMappingURL=app.css.map */
